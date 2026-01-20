@@ -1,7 +1,7 @@
 # FractalResonance.com — System Architecture
 
-**Version:** 1.0 (The Protocol Edition)
-**Stack:** Docusaurus (Frontend/Docs) + Strapi (Optional CMS) + Gumroad (Commerce)
+**Version:** 1.1 (The GHL Integration)
+**Stack:** Docusaurus (Frontend) + Stripe (Payments) + GoHighLevel (CRM/Delivery)
 
 ---
 
@@ -16,8 +16,6 @@ The website is not a brochure. It is a **Terminal**.
 website/
 ├── docs/                   # The Knowledge Base (The Database)
 │   ├── 16d-protocol/       # The 16D Series (v2)
-│   │   ├── 001-universal-vector.md
-│   │   ├── ...
 │   ├── prime-1-foundations/ # FRC v1 Concepts
 │   └── reference/          # Glossary (Ricci, Kappa, RU, etc.)
 ├── blog/                   # "Transmissions" (Updates)
@@ -28,7 +26,7 @@ website/
 │   │   └── prime2.js       # The Sales Page
 │   └── components/
 │       ├── SignalFeed.js   # React component to render YouTube Grid
-│       └── AgentUplink.js  # Component to display AI-copyable context
+│       └── GHLForm.js      # Embed component for GoHighLevel Forms
 ├── static/
 │   ├── ai_protocol.json    # The Machine-Readable Manifest
 │   └── img/
@@ -38,34 +36,23 @@ website/
 ## 3. The "Video First" Homepage Strategy
 *   **Hero Section:** Minimalist. "Fractal Resonance Coherence: An Operating System for Consciousness."
 *   **Primary Action:** "Watch the Briefing" (Latest NotebookLM Explainer).
-*   **The Grid:** A "Netflix-style" horizontal scroll or grid of the YouTube series.
-    *   *Series A:* The 16D Architecture.
-    *   *Series B:* The Philosophy (Prime 2).
-    *   *Series C:* The AI Dialogues (Jules & Architect).
-*   **Data Source:** The list of videos can be hardcoded in JSON (simplest) or fetched from your Strapi instance (dynamic).
+*   **The Grid:** A "Netflix-style" horizontal scroll of YouTube series.
+*   **Lead Capture:** "Join the Frequency" (GHL Form Embed) at the footer.
 
 ## 4. The "Database for AI Models" Strategy
-We explicitly cater to AI agents (Claude, ChatGPT, Gemini).
-
+We explicitly cater to AI agents.
 *   **File:** `/ai_protocol.json`
-*   **Content:** A compressed, token-efficient summary of the entire FRC framework.
-*   **Usage:** A human user says to their AI: *"Go to fractalresonance.com/ai.json and learn this system."*
-*   **Result:** The user's AI becomes an FRC-native agent instantly.
+*   **Content:** A compressed summary of the FRC framework.
+*   **Usage:** A human tells their AI: *"Go to fractalresonance.com/ai.json and learn this system."*
 
-## 5. Monetization: "Prime 2"
-*   **The Page:** `/prime2` or `/artifact`
-*   **The Vibe:** We are selling a "grimoire" or "technical manual," not a self-help book.
+## 5. Monetization: "Prime 2" (Stripe + GHL)
 *   **The Mechanism:**
-    *   Direct Gumroad Overlay.
-    *   User clicks "Acquire the Text".
-    *   Popup handles payment.
-    *   User gets PDF/EPUB download immediately.
-*   **Why Gumroad?** It handles taxes, delivery, and email list building automatically. Zero tech debt for us.
+    *   **Button:** Links directly to a **Stripe Payment Link**.
+    *   **Payment:** User pays via Stripe (Credit Card/Apple Pay).
+    *   **Delivery:** Stripe triggers a **GoHighLevel Workflow**.
+    *   **Email:** GHL sends "Transmission Received" email with the secure PDF link.
+*   **Why this stack?** Full ownership of the customer record, high deliverability, and ability to upsell "Prime 3" or courses later.
 
-## 6. Strapi Integration (Optional Phase 2)
-If we want to update videos *without* a git commit:
-1.  Create `Video` collection in Strapi (Title, YouTubeID, Category).
-2.  Docusaurus fetches `api/videos` at build time.
-3.  Generates the Static Site.
-
-*Recommendation:* Start with hardcoded JSON. It's faster to ship. Move to Strapi only if you update videos daily.
+## 6. Strapi Integration (Optional)
+*   Can be used to manage the video feed dynamically if needed.
+*   For now, we can hardcode the video list in `src/data/videos.json` for speed.

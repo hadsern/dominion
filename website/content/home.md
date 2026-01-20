@@ -52,6 +52,24 @@ Below is the **Signal Feed**: a series of transmissions decoding the 16-Dimensio
 
 ---
 
+## 📡 Join the Frequency
+
+Do not miss a signal. Enter your coordinates to receive new transmissions, paper releases, and NotebookLM updates directly.
+
+*(GoHighLevel Form Placeholder)*
+<div className="ghl-form-embed" style={{
+  background: '#111',
+  padding: '2rem',
+  border: '1px solid #333',
+  borderRadius: '8px',
+  textAlign: 'center'
+}}>
+  <h3>[GHL Form Embed Code Goes Here]</h3>
+  <p>Paste your GoHighLevel Form Script here to capture leads.</p>
+</div>
+
+---
+
 ## 📖 The Written Code
 
 The videos are the map. The text is the territory.

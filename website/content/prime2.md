@@ -36,6 +36,9 @@ It covers:
 We believe information should be free, but *artifacts* carry weight.
 Purchasing the text supports the continued development of the FRC system.
 
+**Secure Access via Stripe:**
+Upon purchase, you will receive an immediate transmission from our system (via GoHighLevel) containing your secure download link.
+
 <div style={{
   display: 'flex',
   justifyContent: 'center',
@@ -54,8 +57,9 @@ Purchasing the text supports the continued development of the FRC system.
     <h3>Digital Edition</h3>
     <p>PDF / EPUB / MOBI</p>
     <h1>$22</h1>
-    <a href="https://gumroad.com/l/your-link" className="button button--primary button--lg">
-      Download Now
+    {/* REPLACE WITH YOUR STRIPE PAYMENT LINK */}
+    <a href="https://buy.stripe.com/your-digital-link" className="button button--primary button--lg">
+      Secure Access
     </a>
   </div>
 
@@ -68,9 +72,10 @@ Purchasing the text supports the continued development of the FRC system.
     background: 'rgba(255, 215, 0, 0.1)'
   }}>
     <h3>Supporter Edition</h3>
-    <p>Book + 16D Vector Maps</p>
+    <p>Book + 16D Vector Maps + Priority Updates</p>
     <h1>$50</h1>
-    <a href="https://gumroad.com/l/your-link-supporter" className="button button--warning button--lg">
+    {/* REPLACE WITH YOUR STRIPE PAYMENT LINK */}
+    <a href="https://buy.stripe.com/your-supporter-link" className="button button--warning button--lg">
       Become a Patron
     </a>
   </div>
