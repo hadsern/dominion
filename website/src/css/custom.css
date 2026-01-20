@@ -1,0 +1,130 @@
+/*
+  Fractal Resonance Cognition — Visual Identity System
+  Version: 2.0 (The Void Protocol)
+*/
+
+:root {
+  /* --- PALETTE --- */
+
+  /* Backgrounds: Deep Void Blue / Near-Black */
+  --frc-void-primary: #0B1020;
+  --frc-void-secondary: #111625;
+  --frc-void-tertiary: #1A1F30;
+
+  /* Text: Pale Silver / Coal Black */
+  --frc-text-light: #E6E8EC;
+  --frc-text-dim: #9CA3AF;
+  --frc-text-dark: #1A1A18;
+
+  /* Coherence: Deep Indigo-Blue (Flow/Propagation) */
+  --frc-blue-primary: #1F3A5F;
+  --frc-blue-light: #2E4A7D;
+
+  /* Attractors: Antique Gold (Invariants/Equilibrium) */
+  --frc-gold-primary: #C9A227;
+  --frc-gold-light: #D4A84B;
+  --frc-gold-muted: #8A7019;
+
+  /* Secondary: Steel Grey */
+  --frc-steel: #6B7280;
+
+  /* --- Docusaurus Overrides --- */
+  --ifm-color-primary: var(--frc-gold-primary);
+  --ifm-color-primary-dark: var(--frc-gold-muted);
+  --ifm-color-primary-lighter: var(--frc-gold-light);
+
+  --ifm-background-color: var(--frc-void-primary);
+  --ifm-background-surface-color: var(--frc-void-secondary);
+
+  --ifm-font-color-base: var(--frc-text-light);
+  --ifm-heading-color: var(--frc-text-light);
+
+  --ifm-font-family-base: 'Inter', 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+
+  /* Remove rounded corners for "Protocol" feel */
+  --ifm-global-radius: 0px;
+  --ifm-card-border-radius: 2px;
+}
+
+/* Dark Mode Enforced (The Void) */
+[data-theme='dark'] {
+  --ifm-background-color: var(--frc-void-primary);
+}
+
+/* --- TYPOGRAPHY --- */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--frc-text-light);
+}
+
+h1 {
+  color: var(--frc-gold-primary); /* Gold for Titles */
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  border-bottom: 1px solid var(--frc-blue-primary);
+  padding-bottom: 1rem;
+}
+
+/* --- COMPONENTS --- */
+
+/* Buttons: Solid Fills, No Gradients, Sharp Edges */
+.button {
+  border-radius: 0px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.button--primary {
+  background-color: var(--frc-blue-primary);
+  border-color: var(--frc-blue-light);
+  color: var(--frc-text-light);
+}
+
+.button--primary:hover {
+  background-color: var(--frc-blue-light);
+}
+
+.button--warning { /* Supporter Tier */
+  background-color: transparent;
+  border-color: var(--frc-gold-primary);
+  color: var(--frc-gold-primary);
+}
+
+.button--warning:hover {
+  background-color: var(--frc-gold-primary);
+  color: var(--frc-void-primary); /* Coal text on Gold */
+}
+
+/* Cards / Containers */
+.card, .markdown > div {
+  background: var(--frc-void-secondary);
+  border: 1px solid var(--frc-blue-primary);
+}
+
+/* Navbar */
+.navbar {
+  background-color: var(--frc-void-primary);
+  border-bottom: 1px solid var(--frc-blue-primary);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--frc-void-secondary);
+  border-top: 1px solid var(--frc-blue-primary);
+}
+
+/* --- DIAGRAMMATIC STYLING --- */
+/* For SVGs and Images */
+img {
+  border: 1px solid var(--frc-steel);
+  opacity: 0.9;
+}
+
+/* Forbidden Styles Removal */
+.shadow, .shadow--lw, .shadow--md, .shadow--tl {
+  box-shadow: none !important; /* No Glow */
+}

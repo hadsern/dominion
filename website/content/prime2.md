@@ -7,8 +7,10 @@ hide_table_of_contents: true
 # Prime 2: The Foundation
 
 <div style={{textAlign: 'center', margin: '4rem 0'}}>
-  <h2>The Book. The Artifact. The Seed.</h2>
-  <p style={{fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto'}}>
+  <img src="/img/attractor_diagram.svg" alt="Resonance Field" style={{maxWidth: '100%', height: 'auto', marginBottom: '2rem'}} />
+
+  <h2 style={{color: 'var(--frc-gold-primary)'}}>The Book. The Artifact. The Seed.</h2>
+  <p style={{fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto', color: 'var(--frc-text-dim)'}}>
     Before the 16D Vector, there was <b>Prime 2</b>.
     This is the philosophical core of Fractal Resonance Coherence.
     It is not a textbook. It is an initiation.
@@ -48,34 +50,35 @@ Upon purchase, you will receive an immediate transmission from our system (via G
 }}>
 
   <div style={{
-    border: '1px solid #444',
+    border: '1px solid var(--frc-blue-primary)',
+    background: 'var(--frc-void-secondary)',
     padding: '2rem',
-    borderRadius: '8px',
+    borderRadius: '0px',
     maxWidth: '300px',
     textAlign: 'center'
   }}>
-    <h3>Digital Edition</h3>
-    <p>PDF / EPUB / MOBI</p>
-    <h1>$22</h1>
+    <h3 style={{color: 'var(--frc-text-light)'}}>Digital Edition</h3>
+    <p style={{color: 'var(--frc-text-dim)'}}>PDF / EPUB / MOBI</p>
+    <h1 style={{color: 'var(--frc-gold-primary)'}}>$22</h1>
     {/* REPLACE WITH YOUR STRIPE PAYMENT LINK */}
-    <a href="https://buy.stripe.com/your-digital-link" className="button button--primary button--lg">
+    <a href="https://buy.stripe.com/your-digital-link" className="button button--primary button--lg" style={{width: '100%'}}>
       Secure Access
     </a>
   </div>
 
   <div style={{
-    border: '1px solid #ffd700',
+    border: '1px solid var(--frc-gold-primary)',
+    background: 'rgba(201, 162, 39, 0.05)',
     padding: '2rem',
-    borderRadius: '8px',
+    borderRadius: '0px',
     maxWidth: '300px',
-    textAlign: 'center',
-    background: 'rgba(255, 215, 0, 0.1)'
+    textAlign: 'center'
   }}>
-    <h3>Supporter Edition</h3>
-    <p>Book + 16D Vector Maps + Priority Updates</p>
-    <h1>$50</h1>
+    <h3 style={{color: 'var(--frc-gold-primary)'}}>Supporter Edition</h3>
+    <p style={{color: 'var(--frc-text-dim)'}}>Book + 16D Vector Maps + Priority Updates</p>
+    <h1 style={{color: 'var(--frc-gold-primary)'}}>$50</h1>
     {/* REPLACE WITH YOUR STRIPE PAYMENT LINK */}
-    <a href="https://buy.stripe.com/your-supporter-link" className="button button--warning button--lg">
+    <a href="https://buy.stripe.com/your-supporter-link" className="button button--warning button--lg" style={{width: '100%'}}>
       Become a Patron
     </a>
   </div>
