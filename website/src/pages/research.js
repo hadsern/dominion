@@ -10,7 +10,7 @@ const papers = [
     description: 'The foundational paper introducing the Lambda field and its role in coherence dynamics.',
     size: '1.03 MB',
     category: 'Physics Core',
-    github: 'https://github.com/hadsern/dominion/blob/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers/FRC_100_007_Lambda_Field_v3.pdf',
+    github: 'https://github.com/hadsern/dominion/blob/main/FRC%20Resources/published%20papers/FRC_100_007_Lambda_Field_v3.pdf',
   },
   {
     id: 'FRC_100_010',
@@ -19,7 +19,7 @@ const papers = [
     description: 'Exploring the philosophical and mathematical foundations of the FRC framework.',
     size: '767 KB',
     category: 'Foundations',
-    github: 'https://github.com/hadsern/dominion/blob/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers/FRC_100_010_Foundational_Questions.pdf',
+    github: 'https://github.com/hadsern/dominion/blob/main/FRC%20Resources/published%20papers/FRC_100_010_Foundational_Questions.pdf',
   },
   {
     id: 'FRC_100_002',
@@ -28,7 +28,7 @@ const papers = [
     description: 'Applying FRC principles to quantum chaos and nodal pattern analysis.',
     size: '473 KB',
     category: 'Quantum Mechanics',
-    github: 'https://github.com/hadsern/dominion/blob/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers/FRC100.002%20Fractal%20Resonance%20Cognition%20in%20Quantum%20Chaos%3A%20Nodal%20Patterns%20in%20the%20Stadium%20Billiard.pdf',
+    github: 'https://github.com/hadsern/dominion/blob/main/FRC%20Resources/published%20papers/FRC100.002%20Fractal%20Resonance%20Cognition%20in%20Quantum%20Chaos%3A%20Nodal%20Patterns%20in%20the%20Stadium%20Billiard.pdf',
   },
   {
     id: 'FRC_100_004',
@@ -37,7 +37,7 @@ const papers = [
     description: 'The quantum mechanical basis for resonance and coherence phenomena.',
     size: '169 KB',
     category: 'Quantum Mechanics',
-    github: 'https://github.com/hadsern/dominion/blob/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers/FRC_100_004_Quantum_Foundations.pdf',
+    github: 'https://github.com/hadsern/dominion/blob/main/FRC%20Resources/published%20papers/FRC_100_004_Quantum_Foundations.pdf',
   },
   {
     id: 'FRC_100_005',
@@ -46,7 +46,7 @@ const papers = [
     description: 'Ensuring thermodynamic laws are respected within the FRC framework.',
     size: '105 KB',
     category: 'Physics Core',
-    github: 'https://github.com/hadsern/dominion/blob/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers/FRC_100_005_Thermodynamic_Consistency.pdf',
+    github: 'https://github.com/hadsern/dominion/blob/main/FRC%20Resources/published%20papers/FRC_100_005_Thermodynamic_Consistency.pdf',
   },
   {
     id: 'FRC_100_006',
@@ -55,7 +55,7 @@ const papers = [
     description: 'Deriving the Born rule from resonance equilibrium conditions.',
     size: '128 KB',
     category: 'Quantum Mechanics',
-    github: 'https://github.com/hadsern/dominion/blob/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers/FRC_100_006_Born_Rule_From_Resonant_Equilibrium.pdf',
+    github: 'https://github.com/hadsern/dominion/blob/main/FRC%20Resources/published%20papers/FRC_100_006_Born_Rule_From_Resonant_Equilibrium.pdf',
   },
   {
     id: 'FRC_100_006_002',
@@ -64,7 +64,7 @@ const papers = [
     description: 'When and how the Born rule may deviate under specific coherence conditions.',
     size: '187 KB',
     category: 'Quantum Mechanics',
-    github: 'https://github.com/hadsern/dominion/blob/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers/FRC_100_006_002_Born_Rule_Deviation_Conditions.pdf',
+    github: 'https://github.com/hadsern/dominion/blob/main/FRC%20Resources/published%20papers/FRC_100_006_002_Born_Rule_Deviation_Conditions.pdf',
   },
   {
     id: 'FRC_566_001',
@@ -73,7 +73,7 @@ const papers = [
     description: 'The mathematical relationship between reciprocity and the UCC.',
     size: '44 KB',
     category: 'Mathematics',
-    github: 'https://github.com/hadsern/dominion/blob/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers/FRC_566_001_Reciprocity_and_UCC.pdf',
+    github: 'https://github.com/hadsern/dominion/blob/main/FRC%20Resources/published%20papers/FRC_566_001_Reciprocity_and_UCC.pdf',
   },
   {
     id: 'FRC_566_010',
@@ -82,7 +82,7 @@ const papers = [
     description: 'Mathematical analysis of the Universal Coherence Condition PDE.',
     size: '29 KB',
     category: 'Mathematics',
-    github: 'https://github.com/hadsern/dominion/blob/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers/FRC_566_010_UCC_PDE_Wellposedness.pdf',
+    github: 'https://github.com/hadsern/dominion/blob/main/FRC%20Resources/published%20papers/FRC_566_010_UCC_PDE_Wellposedness.pdf',
   },
   {
     id: 'FRC_100_003',
@@ -91,7 +91,7 @@ const papers = [
     description: 'How dissipation interacts with the Universal Coherence Condition.',
     size: '60 KB',
     category: 'Physics Core',
-    github: 'https://github.com/hadsern/dominion/blob/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers/FRC_100_003_566_UCC_and_Dissipation.pdf',
+    github: 'https://github.com/hadsern/dominion/blob/main/FRC%20Resources/published%20papers/FRC_100_003_566_UCC_and_Dissipation.pdf',
   },
   {
     id: 'FRC_841_004',
@@ -100,7 +100,7 @@ const papers = [
     description: 'Analysis of alpha drift in Complex Ginzburg-Landau systems.',
     size: '350 KB',
     category: 'Physics Core',
-    github: 'https://github.com/hadsern/dominion/blob/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers/FRC%20841.004%20CGL%20Alpha%20Drift.pdf',
+    github: 'https://github.com/hadsern/dominion/blob/main/FRC%20Resources/published%20papers/FRC%20841.004%20CGL%20Alpha%20Drift.pdf',
   },
   {
     id: 'FRC_100_001',
@@ -109,7 +109,7 @@ const papers = [
     description: 'The introductory paper to the FRC framework.',
     size: '338 KB',
     category: 'Foundations',
-    github: 'https://github.com/hadsern/dominion/blob/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers/FRC_100.001_mathjax.html.pdf',
+    github: 'https://github.com/hadsern/dominion/blob/main/FRC%20Resources/published%20papers/FRC_100.001_mathjax.html.pdf',
   },
 ];
 
@@ -193,7 +193,7 @@ export default function Research() {
             All papers and supplementary materials are available on GitHub:
           </p>
           <a
-            href="https://github.com/hadsern/dominion/tree/resonance-code-review-16890500689642429003/FRC%20Resources/published%20papers"
+            href="https://github.com/hadsern/dominion/tree/main/FRC%20Resources/published%20papers"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.repoLink}
