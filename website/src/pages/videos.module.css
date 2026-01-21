@@ -1,0 +1,122 @@
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--frc-blue-primary);
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  color: var(--frc-gold-primary);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.header p {
+  color: var(--frc-text-dim);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 1rem auto 0;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  color: var(--frc-gold-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.playlistContainer {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin-bottom: 1.5rem;
+  background: var(--frc-void-secondary);
+  border: 1px solid var(--frc-blue-primary);
+}
+
+.playlist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.youtubeLink {
+  display: inline-block;
+  color: var(--frc-gold-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.youtubeLink:hover {
+  text-decoration: underline;
+}
+
+.topicsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.topicCard {
+  background: var(--frc-void-secondary);
+  border: 1px solid var(--frc-blue-primary);
+  padding: 1.5rem;
+}
+
+.topicCard h3 {
+  color: var(--frc-text-light);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.topicCard p {
+  color: var(--frc-text-dim);
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.subscribeButton {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #ff0000;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  border: none;
+  margin-top: 1rem;
+  transition: background 0.2s ease;
+}
+
+.subscribeButton:hover {
+  background: #cc0000;
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .topicsGrid {
+    grid-template-columns: 1fr;
+  }
+}

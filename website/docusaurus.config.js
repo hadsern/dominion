@@ -8,7 +8,7 @@ const config = {
   favicon: 'img/logo_vector.svg',
 
   // Set the production url of your site here
-  url: 'https://fractalresonance.com',
+  url: 'https://fractal-resonance.pages.dev',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
@@ -27,6 +27,10 @@ const config = {
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
+  },
+
+  markdown: {
+    format: 'detect',
   },
 
   presets: [
@@ -66,23 +70,17 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        title: 'FRC Protocol',
+        title: 'FRC',
         logo: {
           alt: 'FRC Logo',
           src: 'img/logo_vector.svg',
         },
         items: [
+          {to: '/research', label: 'Research', position: 'left'},
+          {to: '/videos', label: 'Videos', position: 'left'},
+          {to: '/for-machines', label: 'For AI', position: 'left'},
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'The Database',
-          },
-          {to: '/transmissions', label: 'Transmissions', position: 'left'},
-          {to: '/prime2', label: 'Artifacts', position: 'right'},
-          {to: '/for-machines', label: 'AI Protocol', position: 'right'},
-          {
-            href: 'https://github.com/servathadi/sos',
+            href: 'https://github.com/hadsern/dominion',
             label: 'GitHub',
             position: 'right',
           },
@@ -92,24 +90,24 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Protocol',
+            title: 'Research',
             items: [
               {
-                label: 'The Universal Vector',
-                to: '/docs/16d-protocol/001-universal-vector',
+                label: 'Publications',
+                to: '/research',
               },
               {
-                label: 'Physics Core',
-                to: '/docs/821-physics/001-lambda-field',
+                label: 'arXiv Papers',
+                href: 'https://arxiv.org/abs/2505.20580',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Media',
             items: [
               {
-                label: 'Join the Frequency',
-                to: '/',
+                label: 'Videos',
+                to: '/videos',
               },
               {
                 label: 'YouTube',
@@ -118,24 +116,24 @@ const config = {
             ],
           },
           {
-            title: 'System',
+            title: 'Resources',
             items: [
               {
-                label: 'Prime 2 (Artifact)',
-                to: '/prime2',
+                label: 'GitHub',
+                href: 'https://github.com/hadsern/dominion',
               },
               {
-                label: 'AI Manifest',
-                to: '/ai_protocol.json',
+                label: 'For AI Systems',
+                to: '/for-machines',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Fractal Resonance Coherence. Built by Jules.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Fractal Resonance Coherence. By Hadi Servat.`,
       },
       prism: {
-        theme: require('prism-react-renderer/themes/dracula'), // Dark theme code blocks
-        darkTheme: require('prism-react-renderer/themes/dracula'),
+        theme: require('prism-react-renderer').themes.dracula, // Dark theme code blocks
+        darkTheme: require('prism-react-renderer').themes.dracula,
       },
     }),
 };
